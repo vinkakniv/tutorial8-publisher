@@ -25,3 +25,9 @@ URL `amqp://guest:guest@localhost:5672` yang sama ditemukan di program subscribe
 ### Message Broker (RabbitMQ)
 
 ![](https://i.imgur.com/pHh2jpi.png)
+
+### _Make it works_
+
+![](https://i.imgur.com/rabjLy3.jpeg)
+
+Setelah menjalankan perintah `cargo run` di direktori subscriber dan publisher, konsol menampilkan bahwa program publisher telah berhasil mengirim lima pesan `UserCreatedEventMessage`. Masing-masing pesan berisi `user_id ` dan  `user_name `, yang mengidentifikasikan pengguna yang dibuat. Pesan-pesan ini dihasilkan secara berurutan, mulai dari `user_id`: "1" hingga `user_id`: "5", menunjukkan bahwa program mampu memproses dan mengirim beberapa pesan secara berurutan. Konsol pada subscriber menunjukkan bahwa pesan telah diterima, yang menandakan komunikasi antara publisher dan subscriber berfungsi dengan baik. Proses ini merupakan inti dari sistem berbasis publikasi dan subscripsi, di mana pesan dikirim dan diterima melalui _message broker_. Keberhasilan pengiriman dan penerimaan ini juga menunjukkan bahwa setup RabbitMQ sudah dikonfigurasi dengan benar dan siap untuk digunakan dalam pengembangan lebih lanjut.
