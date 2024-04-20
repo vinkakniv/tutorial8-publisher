@@ -21,3 +21,7 @@ dipanggil sebanyak lima kali, yang berarti lima `UserCreatedEventMessage` akan d
 program, what does it mean?
 
 URL `amqp://guest:guest@localhost:5672` yang sama ditemukan di program subscriber menunjukkan bahwa kedua program, publisher dan subscriber, terhubung ke _message broker_ yang sama. Ini berarti bahwa pesan yang dikirim oleh publisher akan diterima oleh subscriber melalui _broker ini_. `localhost:5672` menunjukkan bahwa _broker_ beroperasi di mesin lokal dengan port 5672, yang merupakan konfigurasi standar untuk koneksi AMQP. Penggunaan _username_ dan _password_ yang sama (guest) dalam kedua URL juga menunjukkan bahwa akses ke _broker_ diatur dengan kredensial yang identik. Hal ini memudahkan manajemen keamanan, seringkali digunakan dalam pengembangan dan pengujian. Koneksi ini mendukung lingkungan pengembangan yang terisolasi dan aman, di mana interaksi antara publisher dan subscriber dapat diuji dengan mudah tanpa memerlukan infrastruktur jaringan yang kompleks.
+
+### Message Broker (RabbitMQ)
+
+![](https://i.imgur.com/pHh2jpi.png)
